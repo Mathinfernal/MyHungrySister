@@ -46,7 +46,6 @@ texture = ExtResource("1_qtlar")
 2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:3/0 = 0
 3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-7:1/size_in_atlas = Vector2i(1, 2)
 7:1/0 = 0
 4:3/0 = 0
 
