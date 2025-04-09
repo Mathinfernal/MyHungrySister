@@ -3,5 +3,6 @@ extends StaticBody2D
 @export var coordinates : Vector2 = Vector2(0.0, -1.0)
 @export var room_to_load : String = "res://scenes/house.tscn"
 
-#func _on_trigger_area_shape_entered(area_rid: RID, area: Area2D, area_shape_index: int, local_shape_index: int) -> void:
+func _on_trigger_area_shape_entered() -> void:
 	#get_tree().change_scene_to_file(room_to_load)
+	print("Door oppened")
