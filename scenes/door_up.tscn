@@ -1,7 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://dp5a3ne2aitrb"]
+[gd_scene load_steps=7 format=3 uid="uid://jjapwc186331"]
 
 [ext_resource type="Texture2D" uid="uid://vjc775mbyenr" path="res://ressources/spritesheets/tileset_fournitures.png" id="1_3ooxn"]
-[ext_resource type="Script" uid="uid://dnvlcgefisixd" path="res://scripts/door.gd" id="1_qmquo"]
+[ext_resource type="Script" uid="uid://cg5pjlq0ugdmy" path="res://scripts/door.gd" id="1_qmquo"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3ooxn"]
 atlas = ExtResource("1_3ooxn")
