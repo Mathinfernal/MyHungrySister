@@ -46,8 +46,6 @@ texture = ExtResource("1_qtlar")
 2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 3:3/0 = 0
 3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
-7:1/0 = 0
-4:3/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_se78b"]
 physics_layer_0/collision_layer = 1
