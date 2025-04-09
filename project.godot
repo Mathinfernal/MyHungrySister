@@ -15,6 +15,10 @@ run/main_scene="res://scenes/menu.tscn"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
+[global_group]
+
+Player="The Player Group"
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0

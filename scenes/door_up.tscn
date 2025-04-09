@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://dp5a3ne2aitrb"]
+
+[ext_resource type="Texture2D" uid="uid://vjc775mbyenr" path="res://ressources/spritesheets/tileset_fournitures.png" id="1_3ooxn"]
+[ext_resource type="Script" uid="uid://dnvlcgefisixd" path="res://scripts/door.gd" id="1_qmquo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ooxn"]
+atlas = ExtResource("1_3ooxn")
+region = Rect2(0, 0, 16, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qmquo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3ooxn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lim24"]
+size = Vector2(16, 27)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sqebs"]
+size = Vector2(16, 5)
+
+[node name="door_up" type="StaticBody2D"]
+script = ExtResource("1_qmquo")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -8)
+sprite_frames = SubResource("SpriteFrames_qmquo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -5.5)
+shape = SubResource("RectangleShape2D_lim24")
+disabled = true
+
+[node name="trigger" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="trigger"]
+position = Vector2(0, 10.5)
+shape = SubResource("RectangleShape2D_sqebs")
+
+[connection signal="area_shape_entered" from="trigger" to="." method="_on_trigger_area_shape_entered"]
+[connection signal="body_entered" from="trigger" to="." method="_on_trigger_body_entered"]
